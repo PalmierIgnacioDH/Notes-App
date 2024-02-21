@@ -1,0 +1,195 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(189, 188, 188);
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin: 0px;
+    background-color: gray;
+}
+
+header .title-cont{
+    margin: 10px;
+    font-size: 20px;
+    color: rgb(255, 175, 175);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+
+nav ul {
+    display: flex;
+    align-content: space-between;
+    width: 30%;
+    min-width: 300px;
+}
+
+nav ul li{
+    list-style: none;
+    color: white;
+    width: 100px;
+    height: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display:inline-block;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+nav ul li a:hover{
+    background-color: rgb(108, 108, 255);
+    transition: background-color 0.5s;
+}
+
+nav ul li a:visited{
+    color: white;
+}
+
+main{
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main .main-text{
+    font-size: 20px;
+    color: rgb(41, 41, 41);
+}
+
+main form{
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+main form .note-title{
+    color: rgb(119, 119, 119);
+    margin: 5px 0;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+
+main form hr{
+    background-color: grey;
+    border: 1px solid grey;
+}
+
+main form .form-part{
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main form .form-part label{
+    width: 100%;
+    margin: 5px 0;
+    font-size: 22px;
+}
+
+main form .form-part input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    font-size: 18px;
+}
+
+main form .form-part input:focus{
+    /* outline: none; */
+    border-bottom: 1px solid rgb(0, 209, 0);
+}
+
+main form .form-part select{
+    /* width: 70%; */
+    border: none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    font-size: 18px;
+    color: rgb(110, 110, 110);
+}
+
+
+main form .form-part-btn button.btn-agregar{
+    background-color: rgb(2, 208, 2);
+    border: 3px solid green;
+    width: 100%;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+}
+
+main form .form-part-btn button.btn-agregar:hover{
+    background-color: rgb(115, 239, 115);
+    border: 3px solid rgb(59, 187, 59);
+    cursor: pointer;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+main form .form-part-btn button.btn-agregar:focus{
+    background-color: rgb(37, 125, 37);
+    border: 3px solid rgb(11, 91, 11);
+    color: grey;
+    cursor: pointer;
+}
+
+main .notes-container {
+    margin-top: 20px;
+    background-color: rgb(220, 220, 220);
+    padding: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .notes-container h2.notes-title{
+    font-size: 30px;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main .notes-container .note{
+    box-sizing: border-box;
+    background-color: white;
+    margin:10px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    max-width: 400px;
+}
+
+main .notes-container .note h4{
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+main .notes-container .note span{
+    display: block;
+    /* text-align: center; */
+    font-size: 17px;
+    margin-top: 20px;
+    height: 300px;
+}
+
+

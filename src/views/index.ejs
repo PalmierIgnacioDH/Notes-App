@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="title-cont">
+            <span class="page-title">
+                Notes App
+            </span>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="home" href="/">Home</a></li>
+                <li class="about"><a href="#new">New</a></li>
+                <li class="serv"><a href="#notes">Notes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Bienvenid@!!</h1>
+        <p class="main-text">Escribí lo que quieras guardar a continuación y pulsa el botón de guardar para ver la magia!!</p>
+        <form id="new" action="" class="crear-nota">
+            <div class="note-title">
+                <h3>Creá tu nota</h3>
+            </div>
+            <hr>
+            <div class="form-part">    
+                <label for="title" class="form-label">Titulo:</label>
+                <input type="text" id="title" name="title" placeholder="Ingresá un titulo..." class="form-input">
+            </div>
+            <div class="form-part">    
+                <label for="body-note" class="form-label">Cuerpo:</label>
+                <input type="text" id="body-note" name="body-note" placeholder="Acá va el cuerpo..." class="form-input" maxlength="200">
+            </div>
+            <div class="form-part">
+                <label for="category" class="form-label">Categoría:</label>
+                <select name="category" id="category" class="form-input">
+                    <option value="">Seleccioná una categoria</option>
+                    <option value="normal">Prioridad normal</option>
+                    <option value="medium">Prioridad media</option>
+                    <option value="immediate">Prioridad inmediata!</option>
+                </select>
+            </div>
+            <div class="form-part-btn">
+                <button class="btn-agregar" type="submit">+</button>
+            </div>
+        </form>
+        <div id="notes" class="notes-container">
+            <h2 class="notes-title">Notas:</h2>
+            <!-- NOTA EJEMPLO -->
+            <div class="note important">
+                <h4>Nota de ejemplo</h4>
+                <hr>
+                <span>Cuerpo de la nota de ejemplo.</span>
+            </div>
+            <!-- NOTA EJEMPLO -->
+             
+            <!-- ACÁ VAN LAS DEMÁS NOTAS -->
+            <!-- ACÁ VAN LAS DEMÁS NOTAS -->
+        </div>
+    </main>
+    <footer>
+        <span>Todos los derechos reservados &copy;</span>
+    </footer>
+    <script src="/js/index.js"></script>
+</body>
+</html>

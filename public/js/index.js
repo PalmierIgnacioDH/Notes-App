@@ -3,10 +3,16 @@ window.onload = () => { // window.onload para que el navegador primero cargue el
     // traemos el formulario del DOM
     let formNuevaNota = document.querySelector('form.crear-nota');
 
+    // creamos el arrayNotes vacio
+    let arrayNotes = [];
+
+    // validamos si localStorage tiene la key notes
     // guardamos los objetos notes del localStorage en nuestro arrayNotes, 
-    //utilizamos ... (spread operator) para esparcir los objetos de nuestro array en el arrayNotes, 
+    // utilizamos ... (spread operator) para esparcir los objetos de nuestro array en el arrayNotes, 
     // y Utilizamos JSON.parse() para convertir nuestro array de obejtos(que viene como JSON) del localStorage en un array con objetos literales
-    const arrayNotes = [...(JSON.parse(localStorage.getItem('notes')))];
+    if(localStorage.getItem('notes') != undefined){
+        arrayNotes = [...(JSON.parse(localStorage.getItem('notes')))];
+    }
 
     // traemos el contenedor para las notas
     const contNotas = document.getElementById('notes');
